@@ -1,1 +1,12 @@
+import pandas as pd
+import mysql.connector
+import pymysql
+from sqlalchemy import create_engine
 
+# Replace 'username', 'password' and 'database' with your MySQL connection details
+engine = create_engine('mysql+mysqlconnector://root:password@username/database')
+connection = engine.connect()
+lis=['artist','canvas_size','image_link','museum','museum_hours','product_size','subject','work']
+for x in lis:
+   df=pd.read_csv(f'D:\data_analytics_pro/archive/{x}.csv')
+   df.to_sql(x,con=connection,if_exists='replace',index=False)
