@@ -1,4 +1,8 @@
- -- 1. Fetch all the paintings which are not displayed on any museums?               
+ _______________________________________________
+|                                               |
+|"Credit for analysis questions goes to TECHTFQ"|
+|_______________________________________________|
+-- 1. Fetch all the paintings which are not displayed on any museums?               
  -- 2. Are there museums without any paintings?
 -- 3. How many paintings have an asking price of more than their regular price?
  -- 4. Identify the paintings whose asking price is less than 50% of its regular price--ok
